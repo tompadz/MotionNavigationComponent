@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MotionNavigator">
+        <attr name="animationType" format="enum">
+            <enum name="fade_through" value="0"/>
+            <enum name="axis_x" value="1"/>
+            <enum name="axis_y" value="2"/>
+            <enum name="axis_z" value="3"/>
+            <enum name="container" value="4"/>
+        </attr>
+    </declare-styleable>
+</resources>

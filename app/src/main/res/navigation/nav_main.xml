@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/mainFragment">
+
+    <motion_fragment
+        android:id="@+id/mainFragment"
+        android:name="com.dapadz.mnc.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_axisYFragment"
+            app:destination="@id/axisYFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_containerFragment"
+            app:destination="@id/containerFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_axisZFragment"
+            app:destination="@id/axisZFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_fadeThroughFragment"
+            app:destination="@id/fadeThroughFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_axisXFragment"
+            app:destination="@id/axisXFragment" />
+    </motion_fragment>
+
+    <motion_fragment
+        android:id="@+id/axisYFragment"
+        android:name="com.dapadz.mnc.AxisYFragment"
+        android:label="AxisYFragment"
+        app:animationType="axis_y"
+        tools:layout="@layout/fragment_axis_y"/>
+
+    <motion_fragment
+        android:id="@+id/containerFragment"
+        android:name="com.dapadz.mnc.ContainerFragment"
+        android:label="ContainerFragment"
+        app:animationType="container"
+        tools:layout="@layout/fragment_container"/>
+
+    <motion_fragment
+        android:id="@+id/fadeThroughFragment"
+        android:name="com.dapadz.mnc.FadeThroughFragment"
+        android:label="FadeThroughFragment"
+        app:animationType="fade_through"
+        tools:layout="@layout/fragment_fade_through"/>
+
+    <motion_fragment
+        android:id="@+id/axisZFragment"
+        android:name="com.dapadz.mnc.AxisZFragment"
+        android:label="AxisZFragment"
+        app:animationType="axis_z"
+        tools:layout="@layout/fragment_axis_z"/>
+
+    <motion_fragment
+        android:id="@+id/axisXFragment"
+        android:name="com.dapadz.mnc.AxisXFragment"
+        android:label="fragment_container"
+        app:animationType="axis_x"
+        tools:layout="@layout/fragment_axis_x" />
+
+</navigation>
